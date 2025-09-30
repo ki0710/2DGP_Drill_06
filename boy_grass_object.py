@@ -42,6 +42,8 @@ class Zombie:
         pass
 
 class Ball:
+    def __init__(self):
+        pass
     pass
 
 
