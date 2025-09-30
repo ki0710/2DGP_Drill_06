@@ -48,11 +48,13 @@ class Ball:
         self.speed = random.randint(5,10)
         if random.randint(0,1) == 0:
             self.image = load_image('ball21x21.png')
+            self.r = 21
         else:
             self.image = load_image('ball41x41.png')
+            self.r = 41
         pass
     def update(self):
-        if self.y > 50 :
+        if self.y > self.r //2 + 50:
             self.y -= self.speed
         pass
     def draw(self):
