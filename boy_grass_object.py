@@ -41,6 +41,9 @@ class Zombie:
         self.image.clip_draw(self.frame * frame_width,0,frame_width,frame_height, self.x, self.y, frame_width // 2, frame_height // 2)
         pass
 
+class Ball:
+    pass
+
 
 def handle_events():
     global running
@@ -73,6 +76,8 @@ def reset_world():
 
     zombie = Zombie()
     world.append(zombie)
+
+
 
 reset_world()
 
