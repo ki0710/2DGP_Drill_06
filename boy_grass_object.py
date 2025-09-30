@@ -43,13 +43,14 @@ class Zombie:
 
 class Ball:
     def __init__(self):
+        self.x = random.randint(100,700)
+        self.y = 599
         pass
     def update(self):
         pass
     def draw(self):
         pass
     pass
-
 
 def handle_events():
     global running
