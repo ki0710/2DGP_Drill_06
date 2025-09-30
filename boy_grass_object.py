@@ -52,7 +52,7 @@ class Ball:
             self.image = load_image('ball41x41.png')
         pass
     def update(self):
-        if self.y > 60:
+        if self.y > 50 :
             self.y -= self.speed
         pass
     def draw(self):
