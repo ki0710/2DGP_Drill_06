@@ -1,7 +1,6 @@
 from pico2d import *
 import random
 
-
 # Game object class here
 class Grass:
     def __init__(self):
@@ -76,6 +75,7 @@ def handle_events():
 open_canvas()
 
 
+
 def reset_world():
     #객체들을 생성
     global running
@@ -116,6 +116,7 @@ while running:
     update_world() #객체들의 상호작용을 시뮬레이션, 계산
     render_world()
     delay(0.05)
+
 
 
 close_canvas()
